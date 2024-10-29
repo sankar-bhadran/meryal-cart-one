@@ -20,7 +20,7 @@ const specialOffers = () => {
                 <ion-icon name="calendar-outline"></ion-icon>
                 <span>28 Oct 2024 -28 Oct 2024</span>
               </span>
-              <p>
+              <p className="boxs-para">
                 In a small shop in the heart of lisbon,we spend our days
                 relentlessly prefecting the chair.The result is a prefect blend
                 of beauty and comfort,that will have a lasting impact on your
@@ -36,7 +36,7 @@ const specialOffers = () => {
                 <ion-icon name="calendar-outline"></ion-icon>
                 <span className="">17 Oct 2024 -30 Oct 2024</span>
               </span>
-              <p>
+              <p className="boxs-para">
                 In a small shop in the heart of lisbon,we spend our days
                 relentlessly prefecting the chair.The result is a prefect blend
                 of beauty and comfort,that will have a lasting impact on your

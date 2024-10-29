@@ -49,98 +49,100 @@ const Cart = () => {
 
   return (
     <>
-      <Container>
-        <div className="outer-container">
-          <Container>
-            <div className="cart-container">
-              <div className="data common-color">
-                <h1>Choose Date</h1>
-              </div>
-              <div className="cart-content ">
-                <h4 className="common-color">All day Ticket</h4>
-                <DatePicker format="DD/MM/YYYY" />
-                <div className="counter">
-                  <h6 className="aj-color">Adult</h6>
-                  <div className="counter-div">
-                    <ion-icon
-                      name="person-outline"
-                      class="md hydrated text-2xl"
-                    ></ion-icon>
-                    {adultCount === 0 ? (
-                      <Button shape="circle">-</Button>
-                    ) : (
-                      <Button
-                        shape="circle"
-                        style={{ borderColor: "#9F3090" }}
-                        onClick={() => subFromCart()}
-                      >
-                        -
-                      </Button>
-                    )}
-
-                    <span>{adultCount}</span>
-                    <Button
-                      shape="circle "
-                      style={{ borderColor: "#9F3090" }}
-                      onClick={() => addToCart()}
-                    >
-                      +
-                    </Button>
-                  </div>
-                </div>
-                <div className="counter">
-                  <h6 className="aj-color">Junior</h6>
-                  <div className="counter-div">
-                    <ion-icon
-                      name="person-outline"
-                      class="md hydrated text-2xl"
-                    ></ion-icon>
-
-                    {juniorCount === 0 ? (
-                      <Button shape="circle">-</Button>
-                    ) : (
-                      <Button
-                        shape="circle"
-                        style={{ borderColor: "#9F3090" }}
-                        onClick={() => subFromCart("junior")}
-                      >
-                        -
-                      </Button>
-                    )}
-
-                    <span>{juniorCount}</span>
-                    <Button
-                      shape="circle"
-                      style={{ borderColor: "#9F3090" }}
-                      onClick={() => addToCart("junior")}
-                    >
-                      +
-                    </Button>
-                  </div>
-                </div>
-                <button className="cart-button button-colors font-color">
-                  Confirm
-                  <ion-icon
-                    name="arrow-forward-outline"
-                    class="sm hydrated"
-                  ></ion-icon>
-                </button>
-              </div>
+      {/* <Container> */}
+      <div className="outer-container">
+        {/* <Container> */}
+        <div className="cart-container">
+          <div className="data common-color">
+            <h1>Choose Date</h1>
+          </div>
+          <div className="cart-content ">
+            <h5 className="common-color val">All day Ticket</h5>
+            <div>
+              <DatePicker format="DD/MM/YYYY" />
             </div>
-          </Container>
-          <div className="fixed_button button-colors" onClick={showDrawer}>
-            <div className="total-item">
-              <div>
+            <div className="counter">
+              <h6 className="aj-color">Adult</h6>
+              <div className="counter-div">
                 <ion-icon
-                  name="cart-outline"
-                  class="meal-icon hydrated"
+                  name="person-outline"
+                  class="md hydrated text-2xl"
                 ></ion-icon>
+                {adultCount === 0 ? (
+                  <Button shape="circle">-</Button>
+                ) : (
+                  <Button
+                    shape="circle"
+                    style={{ borderColor: "#9F3090" }}
+                    onClick={() => subFromCart()}
+                  >
+                    -
+                  </Button>
+                )}
+
+                <span>{adultCount}</span>
+                <Button
+                  shape="circle "
+                  style={{ borderColor: "#9F3090" }}
+                  onClick={() => addToCart()}
+                >
+                  +
+                </Button>
               </div>
-              <h6 className="font-color">QAR {result}</h6>
             </div>
+            <div className="counter">
+              <h6 className="aj-color">Junior</h6>
+              <div className="counter-div">
+                <ion-icon
+                  name="person-outline"
+                  class="md hydrated text-2xl"
+                ></ion-icon>
+
+                {juniorCount === 0 ? (
+                  <Button shape="circle">-</Button>
+                ) : (
+                  <Button
+                    shape="circle"
+                    style={{ borderColor: "#9F3090" }}
+                    onClick={() => subFromCart("junior")}
+                  >
+                    -
+                  </Button>
+                )}
+
+                <span>{juniorCount}</span>
+                <Button
+                  shape="circle"
+                  style={{ borderColor: "#9F3090" }}
+                  onClick={() => addToCart("junior")}
+                >
+                  +
+                </Button>
+              </div>
+            </div>
+            <button className="cart-button button-colors font-color">
+              Confirm
+              <ion-icon
+                name="arrow-forward-outline"
+                class="sm hydrated"
+              ></ion-icon>
+            </button>
           </div>
         </div>
-      </Container>
+        <div className="fixed_button button-colors" onClick={showDrawer}>
+          <div className="total-item">
+            <div>
+              <ion-icon
+                name="cart-outline"
+                class="meal-icon hydrated"
+              ></ion-icon>
+            </div>
+            <h6 className="font-color">QAR {result}</h6>
+          </div>
+        </div>
+        {/* </Container> */}
+      </div>
+      {/* </Container> */}
       <Drawer
         open={open}
         closable={false}
