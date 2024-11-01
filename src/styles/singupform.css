@@ -1,0 +1,148 @@
+.container {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+  padding: 10px;
+  /* background-color: blanchedalmond; */
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  align-items: center;
+}
+
+.signup-heading {
+  margin-bottom: 50px;
+  color: #9795bb;
+}
+
+.signup-heading h3 {
+  margin-bottom: 20px;
+  color: #663e99;
+}
+
+.signupimage {
+  display: block;
+  max-width: 100%;
+}
+
+.inputbox {
+  padding: 10px;
+  border-radius: 25px;
+  outline: none;
+}
+
+span {
+  letter-spacing: 0.32px;
+}
+
+.ant-select-selector {
+  padding: 20px !important;
+  border-radius: 25px !important;
+  outline: none !important;
+}
+
+.verify-button {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  background: linear-gradient(to bottom, #67409a, #4792be);
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.verify-button:hover {
+  background: linear-gradient(to bottom, #9f3090, #6b3e98);
+}
+
+.signupicon {
+  width: 20px;
+  height: 20px;
+}
+
+.select {
+  padding: 0px;
+  border-radius: 30px;
+  outline: none;
+}
+
+.signuplastcard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  background: linear-gradient(to bottom, #e9f4ff, #dce8f4);
+  border-radius: 10px;
+  margin-top: 10px;
+  column-gap: 20px;
+}
+
+.lastcastbox2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lastcastbox2 button {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #c6d4e6;
+  color: #9f3090;
+}
+
+.lastcardimg {
+  width: 100%;
+  display: block;
+  border-radius: 0px 60px 60px 0px;
+}
+
+.signuplastcard h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #673f99;
+}
+
+.signuplastcard h5 {
+  color: #675978;
+}
+
+@media (max-width: 993px) {
+  .signupimage {
+    display: none;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 100px;
+    align-items: center;
+  }
+
+  .lastcardimg {
+    display: none;
+  }
+
+  .signuplastcard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    background: linear-gradient(to bottom, #e9f4ff, #dce8f4);
+    border-radius: 10px;
+    margin-top: 10px;
+    column-gap: 20px;
+  }
+}

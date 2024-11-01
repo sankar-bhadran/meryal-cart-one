@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.header h3 {
+  font-weight: 700;
+}
+
 .btn-mobile-nav {
   display: none;
 }

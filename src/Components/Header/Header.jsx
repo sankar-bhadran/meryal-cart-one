@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <h2>Header</h2>
+        <h3>Meryal</h3>
         <div className="header-content">
           <h5>Waker Park</h5>
           <h5>RIG 193</h5>
