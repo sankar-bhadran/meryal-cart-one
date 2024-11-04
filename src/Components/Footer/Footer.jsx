@@ -8,7 +8,7 @@ import DinersClub from "../../Assets/Diners_Club-logo-53DC9C1F56-seeklogo.com.pn
 const Footer = () => {
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="footer">
         <div className="footer-main">
           <div className="footer-one ">
             <div>

@@ -4,6 +4,7 @@ import "../../styles/singupform.css";
 import { Form, Input, Select } from "antd";
 import signupImage from "../../Assets/img-auth-banner.webp";
 import lastCardImage from "../../Assets/img-login-already.webp";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [form] = Form.useForm();
@@ -14,7 +15,6 @@ const SignUp = () => {
   };
 
   const a = signupForm.map((val) => {
-    console.log(val);
     return val;
   });
 
@@ -153,6 +153,19 @@ const SignUp = () => {
           </div>
           <div className="header-text-box">
             <img src={signupImage} alt="" className="signupimage" />
+            <div className="seasonpass">
+              <h3>Season Pass</h3>
+              <h6>Three Month Pass</h6>
+              <Link to="/seasonpass" className="sesonpass-link">
+                <button type="submit" className="buy-button">
+                  Buy Pass
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    className="hydrated signupicon"
+                  ></ion-icon>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

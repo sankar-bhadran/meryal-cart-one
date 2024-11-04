@@ -1,0 +1,232 @@
+.container {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 20px;
+  padding: 20px;
+  /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2),
+    0 4px 4px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 10px 10px 0px,
+    rgba(14, 30, 37, 0.32) 0px 10px 10px 0px;
+  border-radius: 10px;
+}
+
+.seasonPassImage {
+  display: block;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.boxone {
+  align-self: center;
+}
+
+.innerbox {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  gap: 30px;
+}
+
+.innerboxOne h5 {
+  color: #9f3191;
+  font-weight: 700;
+}
+
+.innerboxOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.counter-div span {
+  font-size: 15px;
+  color: #968ea2;
+}
+
+.innerboxtwo {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 45px;
+  gap: 20px;
+}
+
+.innerbutton {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  border: none;
+  background-color: #9f3191;
+  padding: 10px;
+}
+
+.innerbutton a {
+  text-decoration: none;
+  color: white;
+}
+
+.last-span {
+  margin-top: 10px;
+  color: #663e99;
+}
+
+.span {
+  color: #9f3191;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 20px;
+  width: auto;
+  max-width: 1500px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+table,
+th,
+td {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.center {
+  width: 580px;
+}
+
+.cartsummary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tablehead {
+  border-bottom: 1px solid #ccc;
+}
+
+.total-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.total-cart span {
+  color: #663e99;
+}
+
+.cart-boxone {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  margin-top: 10px;
+}
+
+.dash {
+  border-bottom: 1px solid #ccc;
+}
+
+.total-cart button {
+  width: 60%;
+}
+
+.tablecontent {
+  /* display: flex; */
+  align-items: center;
+}
+
+.tablecontent span {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.ticket {
+  color: #aa4b9e;
+  margin-right: 10px;
+}
+.count {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.data {
+  color: #aa4b9e;
+}
+
+@media (max-width: 984px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 625px) {
+  .center {
+    width: 500px;
+  }
+  .cartsummary {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 551px) {
+  .center {
+    width: 450px;
+  }
+}
+
+@media (max-width: 473px) {
+  .center {
+    width: 400px;
+  }
+}
+
+@media (max-width: 352px) {
+  .center {
+    width: 300px;
+  }
+}

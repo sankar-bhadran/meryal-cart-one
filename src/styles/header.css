@@ -1,12 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
 }
 
 .header h3 {
   font-weight: 700;
+  cursor: pointer;
+}
+
+.header-link {
+  text-decoration: none;
+  color: black;
 }
 
 .btn-mobile-nav {

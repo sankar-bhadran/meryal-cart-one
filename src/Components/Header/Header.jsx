@@ -3,6 +3,7 @@ import { Dropdown, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "../../styles/header.css";
 import { Drawer } from "antd";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,9 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <h3>Meryal</h3>
+        <Link to="/" className="header-link">
+          <h3>Meryal</h3>
+        </Link>
         <div className="header-content">
           <h5>Waker Park</h5>
           <h5>RIG 193</h5>

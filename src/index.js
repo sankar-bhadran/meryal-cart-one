@@ -9,11 +9,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import store from "./Store/store";
 import { Provider } from "react-redux";
 // import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <BrowserRouter>
       <App />
+      <ToastContainer
+        theme="dark"
+        rtl={false}
+        pauseOnFocusLoss
+        hideProgressBar={false}
+        toastStyle={{ color: "white" }}
+      />
     </BrowserRouter>
   </Provider>
 );
