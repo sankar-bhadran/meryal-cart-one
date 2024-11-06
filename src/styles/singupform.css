@@ -179,3 +179,6 @@ span {
     column-gap: 20px;
   }
 }
+
+@media (max-width: 533px) {
+}

@@ -1,0 +1,539 @@
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 76.8px 0 153.6px 0;
+}
+
+.hero {
+  max-width: 2080px;
+  padding: 20px 51.2px;
+}
+
+.heading-primary {
+  font-size: 83.2px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  color: #9e3190;
+}
+
+.hero h3 {
+  color: #978fa2;
+}
+
+.hero-description {
+  font-size: 26px;
+  line-height: 1.7;
+  color: #978fa2;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b664ad;
+  width: 20%;
+}
+
+.heading-discovermeryal {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  margin-bottom: 10px;
+  color: #9e3190;
+}
+
+.para-discovermeryal {
+  font-size: 25px;
+  color: #978fa2;
+}
+
+.custom-tabs .ant-tabs-nav .ant-tabs-tab {
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 15px;
+  color: #978fa2;
+  font-weight: 600;
+}
+
+.custom-tabs .ant-tabs-nav .ant-tabs-tab-active {
+  font-weight: bold;
+  color: aquamarine !important; /* Force active color */
+}
+
+.custom-tabs .ant-tabs-nav .ant-tabs-tab:hover {
+  color: #9e3190;
+}
+
+.tab-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.custom-icon {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+.slider-container {
+  padding: 10px;
+}
+
+.images {
+  border-radius: 10px;
+}
+
+.slick-slider .slick-track {
+  display: flex;
+  gap: 40px;
+}
+
+.slick-arrow.slick-next {
+  background-image: linear-gradient(to top, #4f7fb4, #66419a);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 80%;
+  transform: translateY(-50%);
+  z-index: 4;
+  cursor: pointer;
+  right: 62px;
+  &:hover {
+    background-image: linear-gradient(to top, #4f7fb4, #66419a);
+  }
+}
+
+.slick-arrow.slick-prev {
+  background-image: linear-gradient(to top, #4f7fb4, #66419a);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 80%;
+  transform: translateY(-50%);
+  z-index: 4;
+  cursor: pointer;
+  left: 32px;
+  &:hover {
+    background-image: linear-gradient(to top, #4f7fb4, #66419a);
+  }
+}
+
+.slider-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.image {
+  border-radius: 30px;
+  width: 100%;
+  display: block;
+}
+
+.slider-para {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: bottom 0.3s ease;
+  background: linear-gradient(
+    180deg,
+    transparent 49.79%,
+    rgba(0, 0, 0, 2) 84.31%
+  );
+}
+
+.hover-content {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card__article:hover .slider-para-hover {
+  bottom: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.parent-container {
+  height: 500px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.img-box {
+  background-image: linear-gradient(
+      180deg,
+      rgba(159, 48, 144, 0.7),
+      rgba(94, 85, 162, 0.7)
+    ),
+    url("../Assets/park-entrance-ticket-booking.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  align-items: flex-start;
+  max-width: 660px;
+  gap: 10px;
+}
+
+.img-primary {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+.img-para {
+  font-size: 24px;
+  color: white;
+}
+
+.img-btn {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 20px;
+  border: none;
+  color: #9f3191;
+}
+
+.img-div {
+  padding: 3px 15px;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #f47d2d 9.24%,
+    #d05178 35.1%,
+    #ec6191 51.43%,
+    #a19bb6 69.58%,
+    #4597c0 91.81%
+  );
+  font-size: 20px;
+}
+
+.para-parkattractions {
+  max-width: 777px;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  color: #978fa2;
+}
+
+.section-parkattractions-meryal {
+  margin-top: 50px;
+}
+
+.container-1 {
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-img-1 {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/vr-slide-thumb.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.card-img-2 {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/edutainment-cave-thumb.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-img-1 h1 {
+  color: white;
+}
+.card-img-2 h1 {
+  color: white;
+}
+.card-img-3 h1 {
+  color: white;
+}
+
+.card-icon {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.card-outer {
+  padding: 10px;
+}
+
+.container-2 {
+  max-width: 1920px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.cards-img-1 {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/alghazal-thumb.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards-img-2 {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/dukhan-black-treasure-thumb.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards-img-3 {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/maydan-mahzam-black-gold-thumb.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards-img-1 h2 {
+  color: white;
+}
+.cards-img-2 h2 {
+  color: white;
+}
+.cards-img-3 h2 {
+  color: white;
+}
+
+.section-map {
+  padding: 0 20px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.section-card {
+  background-image: linear-gradient(
+      180deg,
+      rgba(101, 68, 156, 0.66) 11.98%,
+      rgba(0, 9, 14, 0.02) 63.02%
+    ),
+    url("../Assets/98.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.section-inner h2 {
+  text-align: center;
+  color: white;
+  /* font-size: 50px; */
+  font-weight: 700;
+}
+
+.section-btn {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 20px;
+  border: none;
+  color: #9f3191;
+  margin-left: 60px;
+}
+
+.section-water {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-3 {
+  padding: 0 20px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.sub-title {
+  max-width: 72%;
+  text-align: center;
+  color: #978fa2;
+  font-size: 20px;
+}
+
+.restaurant-card {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/asian-restaurant.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 29px;
+}
+
+.restaurant-container {
+  max-width: 411px;
+  font-size: 19px;
+  align-self: center;
+  color: #978fa2;
+}
+
+.restaurant-container h1 {
+  color: #f59f3e;
+}
+
+.section-11-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(180deg, #673f99, #4597c0);
+  color: white;
+  padding: 22px;
+  border-radius: 40px;
+  width: 50%;
+}
+
+.restaurant-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.restaurant-subtitle {
+  max-width: 300px;
+  font-size: 18px;
+  color: #f59f3e;
+}
+
+.restaurant-heading {
+  color: white;
+}
+
+.section-11 {
+  border-color: white;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.retail-card {
+  background-image: linear-gradient(0deg, transparent 50.21%, #000 94.09%),
+    url("../Assets/toy-merch-store.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 29px;
+}
+
+.section-11-second {
+  align-self: flex-end;
+}
+
+.section-12 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  background-color: bisque;
+}
+
+.section-12-image {
+  width: 100%;
+}
+
+.section-12-inner {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 100px;
+  align-self: center;
+  max-width: 400px;
+}
+
+.section-12-btncontainer {
+  display: flex;
+  gap: 12px;
+}
+
+.section-12-btn {
+  padding: 24px 38px;
+  border-radius: 40px;
+  font-size: 19px;
+}
