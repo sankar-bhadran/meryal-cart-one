@@ -35,36 +35,41 @@ const Header = () => {
         <Link to="/" className="header-link">
           <h3>Meryal</h3>
         </Link>
-        <div className="header-content">
-          <h5>Waker Park</h5>
-          <h5>RIG 193</h5>
-          <h5>Rides & Slides</h5>
-          <h5>Dining & Shipping</h5>
-          <h5>Special Offers Events</h5>
-        </div>
         <button class="btn-mobile-nav" onClick={showDrawer}>
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
           {/* <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon> */}
         </button>
 
         <div className="header-icons">
+          <Link to="/buy" className="header-link">
+            <h5>Cart</h5>
+          </Link>
+          <Link to="/seasonpass" className="header-link">
+            <h5>Sesason Pass</h5>
+          </Link>
+          <Link to="/special" className="header-link">
+            <h5>Special Offers</h5>
+          </Link>
           <Dropdown
             menu={{
               items,
               selectable: true,
               defaultSelectedKeys: ["3"],
             }}
+            className="large-dropdown"
           >
-            <Space>
+            <Space className="large-dropdown">
               EN
               <DownOutlined />
             </Space>
           </Dropdown>
 
-          <ion-icon
-            name="person-circle-outline"
-            class="hydrated person-icon"
-          ></ion-icon>
+          <Link to="/signup" className="header-link">
+            <ion-icon
+              name="person-circle-outline"
+              class="hydrated person-icon"
+            ></ion-icon>{" "}
+          </Link>
         </div>
       </div>
       <Drawer

@@ -28,12 +28,17 @@
 .header-icons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.large-dropdown {
+  font-size: 18px;
 }
 
 .person-icon {
-  width: 27px;
-  height: 27px;
+  width: 26px;
+  height: 26px;
 }
 
 .btn-mobile-nav {

@@ -222,7 +222,7 @@ const HomePage = () => {
       <Container>
         <div className="container-1">
           <div>
-            <Card style={{ width: "100%", height: "26rem", border: "none" }}>
+            <Card style={{ width: "100%", height: "416px", border: "none" }}>
               <Card.Body className="card-img-1">
                 <div className="card-outer">
                   <h1>VR Slide</h1>
@@ -359,7 +359,7 @@ const HomePage = () => {
               ></ion-icon>
             </button>
           </div>
-          <div>
+          <div className="rest">
             <Card style={{ height: "22rem", border: "none" }}>
               <Card.Body className="restaurant-card">
                 <div className="restaurant-inner">
@@ -433,7 +433,7 @@ const HomePage = () => {
           <p>ALLDAY ticket will let you make the most of your visit.</p>
           <div className="section-12-btncontainer">
             <button className="section-12-btn">Book Tickets</button>
-            <button>Packages</button>
+            <button className="section-12-btn">Packages</button>
           </div>
         </div>
         <div>

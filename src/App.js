@@ -10,9 +10,9 @@ function App() {
       <Routes>
         <Route path="/buy" element={<Cart />} />
         <Route path="/special" element={<Special />} />
-        <Route path="/" element={<SignupForm />} />
+        <Route path="/signup" element={<SignupForm />} />
         <Route path="/seasonpass" element={<SeasonPage />} />
-        <Route path="/home" element={<MeryalHome />} />
+        <Route path="/" element={<MeryalHome />} />
       </Routes>
     </div>
   );
